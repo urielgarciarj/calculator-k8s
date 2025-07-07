@@ -32,7 +32,7 @@ jobs:
           aws-region: us-east-1
           
       - name: Update kube config
-        run: aws eks update-kubeconfig --name calculator-cluster --region us-east-1
+        run: aws eks update-kubeconfig --name calculator-eks-dev --region us-east-1
         
       - name: Install kubectl
         uses: azure/setup-kubectl@v3
